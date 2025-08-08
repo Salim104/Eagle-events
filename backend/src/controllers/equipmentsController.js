@@ -62,7 +62,7 @@ export const deleteEquipment = async (req, res) => {
     
         if (!deletedEquipment) return res.status(404).json({ message: "Equipment not found" });
     
-        res.status(200).json({ message: "Equipment deleted successfully" });
+        res.status(200).json({ message: "equipment deleted successfully" });
       } catch (error) {
         console.error("Error in deleteEquipment controller", error);
         res.status(500).json({ message: "Internal server error" });

@@ -31,7 +31,7 @@ export const createService = async (req, res) => {
         await newService.save();
         res.status(201).json({ message: "Service created successfully", data: newService });
       } catch (error) {
-        console.error("Error in createService controller", error);
+        console.error("Error in createService  on the controlle controller", error);
         res.status(500).json({ message: "Internal server error" });
       }
 };

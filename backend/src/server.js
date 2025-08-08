@@ -2,6 +2,7 @@ import express from "express";
 import packagesRoutes from "./routes/packagesRoutes.js";
 import equipmentRoutes from "./routes/equipmentRoutes.js";
 import servicesRoutes from "./routes/servicesRoutes.js";
+import quotesRoutes from "./routes/quotesRoutes.js";
 import { connectDB } from "./config/db.js";
 import dotenv from "dotenv";
 
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/api/packages", packagesRoutes);
 app.use("/api/equipments", equipmentRoutes);
 app.use("/api/services", servicesRoutes);
+app.use("/api/quotes", quotesRoutes);
 
 
 

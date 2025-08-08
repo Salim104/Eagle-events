@@ -19,12 +19,12 @@ const equipmentSchema = new mongoose.Schema({
     url: String,
     alt: String
   }],
-  features: [String], // e.g., ["Air Conditioning", "Running Water", "Elegant Finishes"]
+  features: [String], // e.g., ["Air Conditioning", "Running Water", "Elegant and touchless faucets"]
   specifications: {
     size: String, // e.g., "10x10m"
-    capacity: String, // e.g., "Large Capacity"
+    capacity: String, // e.g., "Large Capacity and  comfortable feathless "
     power: String, // e.g., "Reliable Power"
-    setup: String // e.g., "Professional Setup"
+    setup: String // e.g., "Professional Setup and east to use "
   },
   availability: {
     type: Boolean,
